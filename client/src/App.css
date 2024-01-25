@@ -1,0 +1,413 @@
+html {
+  background-image: url('./media/WhiteMovieBG.jpeg');
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: #7A0000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#left-items {
+  flex-grow: 1;
+}
+
+#right-items {
+  flex-grow : 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  align-items: center;
+}
+
+#right-items > button {
+    height: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #7A0000;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+#right-items > button:hover {
+  background-color: #5C0000;
+}
+
+#movieArchiveLogo {
+  width: 80px;
+  height: auto;
+  padding: 15px;
+}
+
+#search {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 50%;
+  font-size: 30px;
+  height: 55px;
+
+}
+
+#body-container {
+  padding-top: 110px;
+}
+
+#filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#year-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items :center;
+}
+
+#year-input > input {
+  margin-top: 15px;
+  margin-right: 5px;
+}
+#year-input > button {
+  margin-top: 15px;
+  margin-left: 5px;
+  width: 95px;
+}
+
+#archive-view {
+  text-align: center;
+}
+
+.rightHeader {
+  height: 60px;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-item {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center; 
+}
+
+.movie-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.movie-image-container {
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.movie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#default-image {
+  width: 87%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#single-movie {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 30px;
+  width: 68%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+}
+
+#data-info {
+  display: flex;
+}
+
+#movie-info {
+  display: flex;
+}
+
+.info-section{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-title {
+  margin-right: 20px;
+  width: 85px;
+}
+
+#movie-left-side {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-right: 30px;
+}
+
+#movie-right-side {
+  margin-top: 40px;
+}
+
+.info-section p{
+  margin: 5px 0;
+}
+
+#movie-info img {
+  min-width: 100%; 
+}
+
+#movie-release-year {
+  margin-right: 10px;
+}
+
+#movie-link,
+#movie-link:visited{
+  color: inherit;
+  text-decoration: none;
+}
+
+#statistic-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#plot1 {
+  width: 500px;
+  height: 500px;
+}
+
+#plot2 {
+  width: 500px;
+  height: 500px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+#single-view {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#back-btn {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  margin-right:15px;
+}
+
+#movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.line-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color:#f2f2f2;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (width <= 599px) {
+  .movie-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .movie-image-container {
+    width: 100%;
+    height: 100px; 
+    overflow: hidden;
+  }
+
+  .movie-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 10px;
+  }
+
+  #movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #movie-left-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  #movie-info img {
+    max-width: 100px; 
+    height: 400px
+
+  }
+
+  #movie-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-title {
+    margin-right: 20px;
+    width: 85px;
+    flex-grow: 1;
+    font-size: 15px;
+  }
+
+  .info-section p{
+    flex-grow: 2;
+    font-size: 10px;
+  }
+
+  .info-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #statistic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  #plot1{
+    width: 300px;
+    height: 300px;
+  }
+
+  #plot2{
+    width: 300px;
+    height: 300px;
+  }
+
+  .line-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color:#f2f2f2;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .line-chart h1 {
+    font-size: 15px;
+  }
+
+  #movie-header h1 {
+    font-size: 25px;
+  }
+
+  #search {
+    height: 30px;
+    width: 65%
+  }
+
+}
+

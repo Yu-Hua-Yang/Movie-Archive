@@ -1,0 +1,21 @@
+{
+  "name": "520-project-yang-mannarino",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "cd ./server && node bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Settimio Mannarino & Yu Hua Yang",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^4.1.17",
+    "plotly.js": "^2.27.1",
+    "react-plotly.js": "^2.6.0"
+  }
+}
